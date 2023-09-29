@@ -1,0 +1,13 @@
+
+
+Hello Thank you for visiting!!
+To use the web application which tells the weather of the  any country .
+It is the weather application in which a user can come and know the temperature of any country.
+Instructions:-
+
+1.You have to just enter the country name, All the things will be done by the api For which we are using (openweathermap) API.
+2.I have included my API So there is no need to mention it.
+3.You can also convert the temperature from Fahrenheit to Celsius and Celsius to Fahrenheit For which a checkbox button is given which show what you want to do.
+4.A home button and about in the navbar for more information.
+5.In the website you can see five days weather forecast.
+6.The weather website is fully responsive you can either open in laptop, tab, phone ( small size, large size, medium)

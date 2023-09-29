@@ -1,0 +1,266 @@
+
+
+body{
+    background-color: rgb(118 198 198);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul.navbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+    background-color: rgb(80, 164, 164);
+    border-radius:25px;
+}
+
+li.nav-item{
+    list-style: none;
+    padding: 6px;
+    margin: 5px;
+    border: 5px solid rgb(175,0213, 239);
+    border-radius: 30px;
+    height: 25px;
+    width: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+
+li.nav-item a{
+    text-decoration: none;
+    color: white;
+}
+li.nav-item a:hover{
+    cursor: pointer;
+    color: rgb(175,0213, 239);
+}
+
+.convert{
+
+    text-align: center;
+}
+.convert-item{
+    color: white;
+    font-size: 2rem;
+}
+/* Main walks which contain serach box and the display box */
+#outbox{
+    display: flex;
+    flex-direction: row;
+}
+/* Search box to search for cityy */
+#search{
+    margin: 7px;
+    background-color: rgb(80, 164, 164);
+    border-radius: 30px;
+    width: 30vw;
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 14px;
+    justify-content: center;
+}
+#search h1{
+    color: white;
+    text-align: center;
+}
+/* input text button */
+#city,#cityInput,.fetch{
+    color: white;
+    font-size: 20px;
+    margin: 3px;
+    width: 20vw;
+    display: block;
+    border-radius: 18px;
+    padding: 2px;
+}
+
+#cityInput{
+    background-color: rgb(80, 164, 164);
+    border: 2px solid rgb(175,0213, 239);
+    text-align: center;
+}
+/* search button */
+.fetch{
+    background-color: rgb(80, 164, 164);
+    border: 5px solid rgb(175,0213, 239);
+    border-radius: 5px;
+}
+.fetch:hover{
+    cursor: pointer;
+    color: rgb(175,0213, 239);
+}
+
+
+
+
+/* Main box to display the weather */
+#display{
+    margin: 8px;
+    width: 70vw;
+    /* background-color: rgb(80, 164, 164); */
+    /* border-radius: 30px; */
+    height: 100vh;
+}
+#display h1{
+    color: white;
+    text-align: center;
+    background-color: rgb(80, 164, 164);
+    border-radius: 30px;
+    width: 50vw;
+    font-size: 2.5rem;
+    margin:5px auto
+}
+/* current weather */
+.weather-data{
+    width: 100%;
+    margin-top: -5px;
+}
+.current-weather{
+    color:white;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 64vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* background-color:rgb(118 198 198); */
+    background-color: rgb(80, 164, 164);
+
+}
+
+.current-weather h2{
+    font-size: 2.5rem;
+}
+.current-weather h4{
+    font-size: 1.25rem;
+}
+.current-weather .icon img{
+    max-width: 200px;
+    margin-top: 0px;
+}
+/* 5 days weather forecast */
+.fivedays{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fivdaystit{
+    color: white;
+    text-align: center;
+    background-color: rgb(80, 164, 164);
+    border-radius: 30px;
+    width: 50vw;
+    font-size: 2.5rem;
+    margin:5px auto
+}
+
+.fivedays .current-weather .details img{
+    max-width: 100px;
+    margin-top: 0px;
+}
+.fivedays .current-weather{
+    color:white;
+    margin: 5px auto;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    margin-left: 10px;
+    margin-top: -5px;
+    /* background-color:rgb(118 198 198); */
+    background-color: rgb(80, 164, 164);
+    justify-content: center;
+    width: 200px;
+    margin: 2px;
+}
+
+
+/* media queries for responsiveness */
+
+@media (max-width:795px) {
+    .fetch{
+        font-size: 1rem;
+    }
+    #cityInput{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:660px){
+    #outbox{
+        flex-direction: column;
+        align-items: center;
+    }
+    #search{
+        width: 71vw;
+    }
+    #city, #cityInput, .fetch{
+        width: 46vw;
+    }
+    
+}
+@media (min-width:300px) and (max-width:527px) {
+    #search{
+        width: 71vw;
+    }
+    #city, #cityInput, .fetch{
+        width: 46vw;
+    }
+    .weather-data{
+        display: flex;
+        justify-content: center;
+    }
+    .current-weather{
+        flex-direction: column;
+        width: 200px;
+        align-items: center;
+    }
+    #display h1{
+        font-size: 2rem;
+        padding: 5px;
+    }
+    .current-weather h4{
+        text-align: center;
+    }
+    .current-weather .icon img{
+        max-width: 100px;
+    }
+}
+
+/* about page */
+.about{
+    margin: 8px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.about h2{
+    color: white;
+    text-align: center;
+    background-color: rgb(80, 164, 164);
+    border-radius: 30px;
+    width: 50vw;
+    font-size: 2.5rem;
+    margin:5px auto   
+}
+.about .details{
+    color: white;
+    text-align: center;
+    background-color: rgb(80, 164, 164);
+    border-radius: 30px;
+    width: 60vw;
+    font-size: 2rem;
+    margin:5px auto;
+    height: 50vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
